@@ -1,0 +1,18 @@
+@mixin colorIcon {
+  color: transparent;
+  line-height: 1;
+  background: $gold-gradient;
+  background-clip: text;
+}
+
+@mixin backgroundProperties {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin backgroundHover {
+  background: $gold-gradient;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}

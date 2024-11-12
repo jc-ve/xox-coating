@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="src/css/icon-arrow.css" />
+    <link rel="stylesheet" href="src/css/icon-basic.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="u-container">
+        <div class="header__content">
+          <a href="index.html" class="logo">
+            <span class="logo--primary">XOX</span>
+            <span class="logo--sub">Coatings</span>
+          </a>
+
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="index.html" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a
+                  href="about.html"
+                  class="navigation__link navigation__link--active"
+                  >About</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn--navigation">
+            <i class="btn--navigation__icon-menu icon-arrows-hamburger-2"></i>
+            <i class="btn--navigation__icon-close icon-arrows-remove"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section section--about">
+      <div class="u-container">
+        <header class="u-text-white u-text-center">
+          <p class="subheading u-margin-bottom-md">
+            Committed to Quality and Innovation
+          </p>
+          <h1 class="heading heading--primary u-margin-bottom-lg">
+            About XOX Coatings
+          </h1>
+          <p>
+            Welcome to XOX Coatings, where creativity, innovation, and
+            dedication come together to provide exceptional solutions and
+            experiences for our clients.
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="u-container-sm">
+        <div class="grid grid--4-cols">
+          <figure class="metric">
+            <h3 class="metric__stat">100%</h3>
+            <figcaption class="metric__desc">
+              Customer Satisfaction Rate
+            </figcaption>
+          </figure>
+          <figure class="metric">
+            <h3 class="metric__stat">500+</h3>
+            <figcaption class="metric__desc">Kitchen Makeovers</figcaption>
+          </figure>
+          <figure class="metric">
+            <h3 class="metric__stat">10</h3>
+            <figcaption class="metric__desc">
+              Years of Trusted Service
+            </figcaption>
+          </figure>
+          <figure class="metric">
+            <h3 class="metric__stat">300+</h3>
+            <figcaption class="metric__desc">5-Star Reviews</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="u-container">
+        <div class="grid grid--2-cols u-margin-bottom-3xl">
+          <div>
+            <header class="u-margin-bottom-lg">
+              <p class="subheading u-margin-bottom-md">Who We Are</p>
+              <h3 class="heading heading--tertiary u-margin-bottom-md">
+                The Heart of XOX Coatings
+              </h3>
+            </header>
+            <div>
+              <p class="u-margin-bottom-md">
+                At XOX Coatings we provide spray painting services that
+                transform our customers’ homes, whilst saving them money and
+                hassle. “How is that so?” you ask. Well, if you have just had a
+                lovely new composite front door installed, in the ever-popular
+                Anthracite Grey, you will know it wasn’t cheap. You will also
+                know that there was a bit of remedial work required to the walls
+                around the new frame and likely a fresh coat of paint. You will
+                also know that changing all of the windows in your house to
+                match is also going to be expensive and incur the same issues.
+              </p>
+              <p class="u-margin-bottom-md">
+                Now imagine you can have all of your windows magically coloured
+                in, in a much faster timescale, without any dusty building work,
+                without any repairs needed and at less than half the cost! Well,
+                imagine no more. At XOX Coatings we can spray paint your uPVC
+                windows in an industrial 2K polyurethane coating (the most
+                durable product available on the market) with an expected
+                lifespan of 10-15 years.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <div class="gallery__item">
+              <img
+                src="assets/images/green-kitchen-table.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/kitchen-black.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/kitchen-sink.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/kitchen-white-2.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/green-table.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/kitchen-black-2.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/garage-black.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/outside-garden.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/outside-home-2.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--steps u-text-white">
+      <div class="u-container">
+        <header class="section__header u-text-center">
+          <p class="subheading u-margin-bottom-md">Our Unique Approach</p>
+          <h2 class="heading heading--secondary">What Sets Us Apart?</h2>
+        </header>
+
+        <ul class="list--grid u-margin-bottom-3xl">
+          <li class="card card--transparent u-text-center">
+            <i class="card__icon icon-basic-trashcan-refresh"></i>
+            <h4 class="card__title">Consultation and Color Selection</h4>
+            <p>
+              We begin with a consultation to help you choose the perfect color
+              and finish for your kitchen.
+            </p>
+          </li>
+          <li class="card card--transparent u-text-center">
+            <i class="card__icon icon-basic-key"></i>
+            <h4 class="card__title">Preparing Your Kitchen for Spraying</h4>
+            <p>
+              Surfaces are cleaned and primed to ensure optimal paint adhesion
+              and a smooth finish.
+            </p>
+          </li>
+          <li class="card card--transparent u-text-center">
+            <i class="card__icon icon-basic-pencil-ruler-pen"></i>
+            <h4 class="card__title">The Spraying Application</h4>
+            <p>
+              Our team applies the chosen color with precision, using
+              professional spray techniques for a flawless, even coat.
+            </p>
+          </li>
+          <li class="card card--transparent u-text-center">
+            <i class="card__icon icon-basic-magnifier"></i>
+            <h4 class="card__title">Final Inspection and Aftercare</h4>
+            <p>
+              Once completed, we conduct a thorough inspection and provide
+              aftercare tips to maintain your refreshed kitchen.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="u-container">
+        <header class="u-text-center u-margin-bottom-xl">
+          <p class="subheading u-margin-bottom-md">Quick, Easy, and Free!</p>
+          <h2 class="heading heading--secondary u-margin-bottom-lg">
+            Get Your Free Quote Today!
+          </h2>
+          <p>
+            Reach out to us for a no-obligation quote on your roofing project.
+            Fast, easy, and transparent!
+          </p>
+        </header>
+
+        <div class="cta cta--centered">
+          <a href="#" class="btn btn--secondary">Get Your Free Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="u-text-center">
+        All Rights Reserved &copy; 2024 | XOX Coatings |
+        <a href="#" class="footer__link">Privacy Policy</a>
+      </p>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

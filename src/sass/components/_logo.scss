@@ -1,0 +1,23 @@
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: $font-logo;
+  text-decoration: none;
+  color: $clr-black;
+  text-align: center;
+  line-height: 1;
+
+  &--primary {
+    display: block;
+    font-weight: 500;
+    font-size: 4.4rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+  }
+
+  &--sub {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}

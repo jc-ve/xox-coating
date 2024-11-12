@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="src/css/icon-arrow.css" />
+    <link rel="stylesheet" href="src/css/icon-basic.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="u-container">
+        <div class="header__content">
+          <a href="index.html" class="logo">
+            <span class="logo--primary">XOX</span>
+            <span class="logo--sub">Coatings</span>
+          </a>
+
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a
+                  href="index.html"
+                  class="navigation__link navigation__link--active"
+                  >Home</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="about.html" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn--navigation">
+            <i
+              class="btn--navigation__icon btn--navigation__icon-menu icon-arrows-hamburger-2"
+            ></i>
+            <i
+              class="btn--navigation__icon btn--navigation__icon-close icon-arrows-remove"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section section--hero">
+      <div class="u-container">
+        <div class="grid grid--2-cols grid--centered">
+          <div class="u-text-white">
+            <header class="u-margin-bottom-lg">
+              <p class="subheading u-margin-bottom-md">
+                Transform Your Kitchen Today
+              </p>
+              <h1 class="heading heading--primary">
+                Kitchen Spraying Services in London
+              </h1>
+            </header>
+            <p class="u-margin-bottom-lg">
+              Give your kitchen a fresh, modern look without the expense and
+              hassle of a full renovation. Our professional kitchen spraying
+              service in London offers a cost-effective and eco-friendly way to
+              transform cabinets, doors, and surfaces with a flawless, durable
+              finish in your choice of color and style.
+            </p>
+
+            <div class="cta u-margin-bottom-2xl">
+              <a href="contact.html" class="btn btn--primary"
+                >Refresh Your Kitchen</a
+              >
+              <a href="#about" class="btn btn--outline">Explore Now</a>
+            </div>
+
+            <div class="customer">
+              <div class="customer__imgs">
+                <img
+                  src="assets/images/customers/customer-1.jpg"
+                  alt=""
+                  class="customer__img"
+                />
+                <img
+                  src="assets/images/customers/customer-2.jpg"
+                  alt=""
+                  class="customer__img"
+                />
+                <img
+                  src="assets/images/customers/customer-3.jpg"
+                  alt=""
+                  class="customer__img"
+                />
+                <img
+                  src="assets/images/customers/customer-4.jpg"
+                  alt=""
+                  class="customer__img"
+                />
+                <img
+                  src="assets/images/customers/customer-5.jpg"
+                  alt=""
+                  class="customer__img"
+                />
+                <img
+                  src="assets/images/customers/customer-6.jpg"
+                  alt=""
+                  class="customer__img"
+                />
+              </div>
+              <p class="customer__text">
+                Join our community of
+                <span class="u-text-primary">happy customers!</span>
+              </p>
+            </div>
+          </div>
+
+          <form action="" class="form">
+            <h2 class="form__title">Get in Touch with Us!</h2>
+            <div class="form__input-group">
+              <label for="first-name" class="form__label">First Name</label>
+              <input
+                type="text"
+                class="form__input"
+                id="first-name"
+                placeholder="What's your first name?"
+                required
+              />
+            </div>
+            <div class="form__input-group">
+              <label for="last-name" class="form__label">Last Name</label>
+              <input
+                type="text"
+                class="form__input"
+                id="last-name"
+                placeholder="What's your last name?"
+                required
+              />
+            </div>
+            <div class="form__input-group">
+              <label for="mobile" class="form__label">Mobile Phone</label>
+              <input
+                type="text"
+                class="form__input"
+                id="mobile"
+                placeholder="What's your contact number?"
+                required
+              />
+            </div>
+            <div class="form__input-group form__input-group--flexed">
+              <div>
+                <label for="email" class="form__label">Email</label>
+                <input
+                  type="email"
+                  class="form__input"
+                  id="email"
+                  placeholder="What's your email?"
+                  required
+                />
+              </div>
+              <div>
+                <label for="postcode" class="form__label">Postcode</label>
+                <input
+                  type="text"
+                  class="form__input"
+                  id="postcode"
+                  placeholder="What's your postcode?"
+                  required
+                />
+              </div>
+            </div>
+            <button class="btn btn--primary">Send us a Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="u-container">
+        <header class="section__header u-text-center">
+          <p class="subheading u-margin-bottom-md">
+            Fast, Professional Spraying for Your Kitchen
+          </p>
+          <h2 class="heading heading--secondary u-margin-bottom-lg">
+            Transform Your Kitchen with Professional Kitchen Spraying in London
+          </h2>
+          <p>
+            Improve your kitchen’s look with our cost-effective professional
+            kitchen spraying in London, that transforms cabinets and surfaces
+            into a fresh, modern space without the need for a full renovation.
+          </p>
+        </header>
+
+        <div class="grid grid--2-cols u-margin-bottom-3xl">
+          <div>
+            <header class="u-margin-bottom-lg">
+              <h3 class="heading heading--tertiary u-margin-bottom-md">
+                Why Choose Kitchen Spraying Over a Full Renovation?
+              </h3>
+              <p>
+                Kitchen spraying is an affordable and efficient alternative to
+                traditional kitchen renovation. Instead of replacing cabinets
+                and surfaces, professional kitchen spray painting gives your
+                kitchen a brand-new look at a fraction of the cost. Here’s why
+                so many London homeowners are choosing kitchen spraying:
+              </p>
+            </header>
+            <ul class="list">
+              <li class="list__item card card--side-icon">
+                <i class="card__icon card__icon--sm icon-basic-calculator"></i>
+
+                <p>
+                  <strong>Cost-effective Solution</strong>: Kitchen spraying
+                  offers a budget-friendly way to revamp your kitchen. With no
+                  need for full cabinet replacements, you can save significantly
+                  while achieving a high-quality, modern finish.
+                </p>
+              </li>
+              <li class="list__item card card--side-icon">
+                <i class="card__icon card__icon--sm icon-basic-world"></i>
+                <p>
+                  <strong>Eco-friendly Approach</strong>: By reusing your
+                  existing kitchen cabinets and doors, you reduce waste and
+                  avoid sending usable materials to landfills. Kitchen spraying
+                  uses sustainable practices, making it a green alternative to
+                  renovation.
+                </p>
+              </li>
+              <li class="list__item card card--side-icon">
+                <i
+                  class="card__icon card__icon--sm icon-basic-anticlockwise"
+                ></i>
+                <p>
+                  <strong>Minimal Disruption</strong>: A full renovation can
+                  disrupt your home for weeks, but kitchen spraying is a faster
+                  process that minimizes downtime. Professional kitchen sprayers
+                  complete the job in just a few days, allowing you to enjoy
+                  your refreshed kitchen sooner.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="gallery">
+            <div class="gallery__item">
+              <img
+                src="assets/images/green-kitchen-table.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/kitchen-black.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/kitchen-sink.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/kitchen-white-2.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/green-table.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/kitchen-black-2.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/garage-black.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/outside-garden.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="assets/images/outside-home-2.webp"
+                alt=""
+                class="gallery__img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <header class="section__header u-text-center">
+          <h3 class="heading heading--tertiary u-margin-bottom-md">
+            What is Kitchen Spraying and How Does It Work?
+          </h3>
+          <p>
+            Kitchen spraying is a specialized process that transforms your
+            kitchen surfaces with precision and attention to detail. Here’s a
+            step-by-step breakdown of the professional kitchen spraying process:
+          </p>
+        </header>
+
+        <ul class="list--grid u-margin-bottom-3xl">
+          <li class="card">
+            <div>
+              <i class="card__icon icon-basic-trashcan"></i>
+              <h4 class="card__title">Cleaning and Preparation</h4>
+              <p>
+                We start by thoroughly cleaning all surfaces to remove grease,
+                dust, and residue. This step is essential to ensure the spray
+                paint adheres smoothly and lasts longer.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <i class="card__icon icon-basic-settings"></i>
+              <h4 class="card__title">Priming</h4>
+              <p>
+                A high-quality primer is applied to create a stable base for the
+                color application. Priming prepares the kitchen cabinets and
+                doors for an even, long-lasting finish.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <i class="card__icon icon-basic-pencil-ruler"></i>
+              <h4 class="card__title">Spraying Application</h4>
+              <p>
+                Using advanced spray-painting techniques, we apply your chosen
+                color in even layers. The spraying process is highly controlled,
+                resulting in a smooth, factory-grade finish that’s free from
+                brush marks or streaks.
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <i class="card__icon icon-basic-todolist-pen"></i>
+              <h4 class="card__title">Finishing Touches and Inspection</h4>
+              <p>
+                Once the spray paint has dried, we complete a detailed
+                inspection to ensure quality. The final finish is durable,
+                resistant to everyday wear, and ready to transform your kitchen
+                into a beautiful, updated space.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="cta cta--centered">
+          <a href="#" class="btn btn--primary">Give Us a Call</a>
+          <a href="#" class="btn btn--secondary">Get Your Free Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--steps u-text-white">
+      <div class="u-container">
+        <header class="section__header u-text-center">
+          <p class="subheading u-margin-bottom-md">
+            How We Transform Your Kitchen
+          </p>
+          <h2 class="heading heading--secondary">
+            Our Kitchen Spraying Process
+          </h2>
+        </header>
+
+        <div>
+          <h3 class="heading heading--normal u-text-center u-margin-bottom-2xl">
+            Step-by-Step Kitchen Spraying Process
+          </h3>
+
+          <ul class="list--grid u-margin-bottom-3xl">
+            <li class="card card--transparent u-text-center">
+              <i class="card__icon icon-basic-trashcan-refresh"></i>
+              <h4 class="card__title">Consultation and Color Selection</h4>
+              <p>
+                We begin with a consultation to help you choose the perfect
+                color and finish for your kitchen.
+              </p>
+            </li>
+            <li class="card card--transparent u-text-center">
+              <i class="card__icon icon-basic-key"></i>
+              <h4 class="card__title">Preparing Your Kitchen for Spraying</h4>
+              <p>
+                Surfaces are cleaned and primed to ensure optimal paint adhesion
+                and a smooth finish.
+              </p>
+            </li>
+            <li class="card card--transparent u-text-center">
+              <i class="card__icon icon-basic-pencil-ruler-pen"></i>
+              <h4 class="card__title">The Spraying Application</h4>
+              <p>
+                Our team applies the chosen color with precision, using
+                professional spray techniques for a flawless, even coat.
+              </p>
+            </li>
+            <li class="card card--transparent u-text-center">
+              <i class="card__icon icon-basic-magnifier"></i>
+              <h4 class="card__title">Final Inspection and Aftercare</h4>
+              <p>
+                Once completed, we conduct a thorough inspection and provide
+                aftercare tips to maintain your refreshed kitchen.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="cta cta--centered">
+          <a href="#" class="btn btn--primary">Start Your Makeover</a>
+          <a href="#" class="btn btn--outline">Get Your Free Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="u-container">
+        <header class="section__header u-text-center">
+          <p class="subheading u-margin-bottom-md">
+            Your Kitchen Makeover at the Best Value
+          </p>
+          <h2 class="heading heading--secondary">
+            Our Kitchen Spraying Prices In London
+          </h2>
+        </header>
+
+        <div class="grid grid--3-cols">
+          <article class="pricing pricing--small">
+            <div class="pricing__content">
+              <i class="pricing__icon icon-arrows-fit-horizontal"></i>
+              <p class="pricing__title">Small Kitchen</p>
+              <p class="pricing__price">
+                From <span class="pricing__value">£499</span>
+              </p>
+              <a href="#" class="btn btn--primary">Get Your Free Quote</a>
+            </div>
+          </article>
+          <article class="pricing pricing--medium">
+            <div class="pricing__content">
+              <i class="pricing__icon icon-arrows-expand"></i>
+              <p class="pricing__title">Medium Kitchen</p>
+              <p class="pricing__price">
+                From <span class="pricing__value">£499</span>
+              </p>
+              <a href="#" class="btn btn--primary">Get Your Free Quote</a>
+            </div>
+          </article>
+          <article class="pricing pricing--medium">
+            <div class="pricing__content">
+              <i class="pricing__icon icon-arrows-squares"></i>
+              <p class="pricing__title">Large Kitchen</p>
+              <p class="pricing__price">
+                From <span class="pricing__value">£499</span>
+              </p>
+              <a href="#" class="btn btn--primary">Get Your Free Quote</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="u-container">
+        <header class="section__header u-text-center">
+          <p class="subheading u-margin-bottom-md">
+            Experience Quality Kitchen Spraying with Us
+          </p>
+          <h2 class="heading heading--secondary">
+            Why Choose Us for Kitchen Spraying in London?
+          </h2>
+        </header>
+
+        <div class="grid grid--3-cols">
+          <article class="card card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-clessidre"></i>
+            <div>
+              <h3 class="card__title">
+                Experienced, Local London Kitchen Sprayers
+              </h3>
+              <p>
+                Our London-based kitchen sprayers bring expertise and precision,
+                delivering quality transformations for every kitchen.
+              </p>
+            </div>
+          </article>
+          <article class="card card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-cup"></i>
+            <div>
+              <h3 class="card__title">
+                High-Quality, Durable Paints for Kitchens
+              </h3>
+              <p>
+                We use premium, durable kitchen paints that ensure long-lasting,
+                professional results.
+              </p>
+            </div>
+          </article>
+          <article class="card card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-star"></i>
+            <div>
+              <h3 class="card__title">Customer Satisfaction and Reviews</h3>
+              <p>
+                Trusted by London homeowners, our service is backed by glowing
+                reviews and a commitment to exceptional quality.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="u-container">
+        <header class="section__header u-text-center">
+          <p class="subheading u-margin-bottom-md">
+            Answers to Your Kitchen Spraying Questions
+          </p>
+          <h2 class="heading heading--secondary">
+            Frequently Asked Questions (FAQs) about Kitchen Spraying in London
+          </h2>
+        </header>
+
+        <div class="grid grid--2-cols u-margin-bottom-3xl">
+          <article class="card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-question"></i>
+            <div>
+              <h3 class="card__title">
+                What surfaces can be sprayed in my kitchen?
+              </h3>
+              <p>
+                We can spray all key kitchen surfaces, including cabinets,
+                doors, drawers, and shelves, giving your entire kitchen a
+                seamless, refreshed look.
+              </p>
+            </div>
+          </article>
+          <article class="card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-question"></i>
+            <div>
+              <h3 class="card__title">How long does kitchen spraying take?</h3>
+              <p>
+                Most of our professional kitchen spraying projects are completed
+                within 2-3 days, allowing you to enjoy your transformed kitchen
+                in no time.
+              </p>
+            </div>
+          </article>
+          <article class="card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-question"></i>
+            <div>
+              <h3 class="card__title">Is kitchen spraying safe?</h3>
+              <p>
+                Yes, we use professional-grade, pre-catalyzed solvent-based
+                paints that cure to a hard, durable finish, ensuring both beauty
+                and longevity for your kitchen.
+              </p>
+            </div>
+          </article>
+          <article class="card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-question"></i>
+            <div>
+              <h3 class="card__title">
+                Can I choose any color for my kitchen spraying?
+              </h3>
+              <p>
+                Absolutely! We offer a broad selection of colors and finishes,
+                so you can fully customize your kitchen’s new look to suit your
+                style. You can choose any RAL, Dulux or Farrow & Ball color for
+                your kitchen respray project.
+              </p>
+            </div>
+          </article>
+          <article class="card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-question"></i>
+            <div>
+              <h3 class="card__title">
+                How durable is the kitchen spray paint?
+              </h3>
+              <p>
+                Our pre-catalyzed solvent-based paints are specially formulated
+                for kitchens, offering a tough, stain-resistant finish that
+                withstands daily wear.
+              </p>
+            </div>
+          </article>
+          <article class="card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-question"></i>
+            <div>
+              <h3 class="card__title">
+                Do I need to empty my cabinets before spraying?
+              </h3>
+              <p>
+                Yes, we recommend emptying cabinets to ensure an even,
+                professional spray application across all surfaces.
+              </p>
+            </div>
+          </article>
+          <article class="card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-question"></i>
+            <div>
+              <h3 class="card__title">How long does the finish last?</h3>
+              <p>
+                With proper care, our durable spray finish can last up to 10
+                years, keeping your kitchen looking fresh for years to come.
+              </p>
+            </div>
+          </article>
+          <article class="card--side-icon">
+            <i class="card__icon card__icon--sm icon-basic-question"></i>
+            <div>
+              <h3 class="card__title">
+                Will there be any strong odors during the spraying process?
+              </h3>
+              <p>
+                While pre-catalyzed solvent-based paint has a brief odor, it
+                dissipates quickly, and the curing process ensures a safe,
+                long-lasting result for your kitchen.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="cta cta--centered">
+          <a href="#" class="btn btn--primary">Got More Questions?</a>
+          <a href="#" class="btn btn--secondary">Get Your Free Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--location">
+      <div class="u-container">
+        <div class="grid grid--2-cols">
+          <div class="u-text-white">
+            <header class="u-margin-bottom-lg">
+              <p class="subheading u-margin-bottom-md">
+                Proudly Serving London and Beyond
+              </p>
+              <h2 class="heading heading--secondary">
+                We Serve London and all surrounding areas
+              </h2>
+            </header>
+            <p class="u-margin-bottom-md">
+              Our skilled kitchen refinishing teams spray paint kitchen doors
+              and kitchen cabinets to perfection throughout London including:
+            </p>
+
+            <div class="u-margin-bottom-md">
+              <h3 class="heading heading--normal u-margin-bottom-sm">
+                Suburbs
+              </h3>
+              <p>Content Here</p>
+            </div>
+            <div class="u-margin-bottom-xl">
+              <h3 class="heading heading--normal u-margin-bottom-sm">
+                Postcodes
+              </h3>
+              <p>Content Here</p>
+            </div>
+            <div class="cta">
+              <a href="#" class="btn btn--primary">Revamp Your Kitchen</a>
+              <a href="#" class="btn btn--outline">Get Your Free Quote</a>
+            </div>
+          </div>
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="u-text-center">
+        All Rights Reserved &copy; 2024 | XOX Coatings |
+        <a href="#" class="footer__link">Privacy Policy</a>
+      </p>
+    </footer>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

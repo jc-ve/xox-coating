@@ -1,0 +1,48 @@
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3.2rem;
+
+  &__icon {
+    display: inline-block;
+    font-size: 4.8rem;
+    @include colorIcon;
+    margin-bottom: 2.4rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    @include colorIcon;
+    margin-bottom: 3.2rem;
+  }
+
+  &__price {
+    font-size: 2rem;
+    color: $clr-white;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 4.8rem;
+  }
+
+  &__value {
+    font-size: 6.2rem;
+    @include colorIcon;
+  }
+
+  &--small {
+    background: $bg-gradient, url(../../../assets/images/kitchen.webp);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--medium {
+    background: $bg-gradient, url(../../../assets/images/kitchen-sink.webp);
+    background-size: cover;
+    background-position: center;
+  }
+}

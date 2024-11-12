@@ -1,0 +1,48 @@
+// Spacing system (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+.u-container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.u-container-sm {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem;
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 2.4rem;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 3.2rem;
+}
+
+.u-margin-bottom-xl {
+  margin-bottom: 4.8rem;
+}
+
+.u-margin-bottom-2xl {
+  margin-bottom: 6.4rem;
+}
+
+.u-margin-bottom-3xl {
+  margin-bottom: 8rem;
+}
+
+.u-text-white {
+  color: $clr-white;
+}
+
+.u-text-primary {
+  color: $clr-gold;
+}
+
+.u-text-center {
+  text-align: center;
+}

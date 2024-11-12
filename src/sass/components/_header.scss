@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  padding: 3.2rem 2rem;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &.active {
+    & .navigation {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+    }
+
+    & .btn--navigation {
+      position: fixed;
+      top: 3.2rem;
+      right: 2rem;
+      z-index: 2;
+
+      &__icon-menu {
+        display: none;
+      }
+
+      &__icon-close {
+        display: block;
+      }
+    }
+  }
+}

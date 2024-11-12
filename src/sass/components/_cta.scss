@@ -1,0 +1,13 @@
+.cta {
+  display: flex;
+  gap: 2.4rem;
+
+  @media only screen and (max-width: $bp-xsmall) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &--centered {
+    justify-content: center;
+  }
+}

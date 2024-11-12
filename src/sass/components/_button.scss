@@ -1,0 +1,77 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &--primary {
+    &,
+    &:link,
+    &:visited {
+      color: $clr-black;
+      background-color: $clr-gold;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+      background-color: darken($clr-gold, 10%);
+    }
+  }
+
+  &--secondary {
+    &,
+    &:link,
+    &:visited {
+      color: $clr-white;
+      background-color: $clr-gray;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $clr-gray-light;
+    }
+  }
+
+  &--outline {
+    &,
+    &:link,
+    &:visited {
+      color: $clr-gold;
+      box-shadow: 0 0 0 1px inset $clr-gold;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-black;
+      background-color: $clr-gold;
+    }
+  }
+
+  &--navigation {
+    display: none;
+    font-size: 4.8rem;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      display: block;
+    }
+
+    &__icon-close {
+      display: none;
+    }
+  }
+}

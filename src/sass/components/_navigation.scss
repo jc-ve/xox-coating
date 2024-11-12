@@ -1,0 +1,55 @@
+.navigation {
+  @media only screen and (max-width: $bp-xsmall) {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    padding: 2rem;
+    background: rgba(250, 250, 250, 0.8);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2.4rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      flex-direction: column;
+      position: absolute;
+      top: 9rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 700;
+      color: $clr-black;
+      text-decoration: none;
+      @include backgroundHover;
+      background-size: 0 2px;
+
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-gold;
+      background-size: 100% 2px;
+    }
+
+    &--active {
+      &:link,
+      &:visited {
+        @include backgroundHover;
+        background-size: 100% 2px;
+      }
+    }
+  }
+}

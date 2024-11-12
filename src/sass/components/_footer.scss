@@ -1,0 +1,18 @@
+.footer {
+  padding: 2rem;
+  color: $clr-white;
+  background-color: $clr-black;
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $clr-white;
+      transition: color 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-gold;
+    }
+  }
+}

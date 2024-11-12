@@ -1,0 +1,51 @@
+.section {
+  padding: 8rem 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 6.4rem 2rem;
+  }
+
+  &--hero {
+    min-height: 80vh;
+    background: $bg-gradient, url(../../../assets/images/kitchen-black-2.webp);
+    @include backgroundProperties;
+  }
+
+  &--steps {
+    background: $bg-gradient, url(../../../assets/images/kitchen-sink.webp);
+    @include backgroundProperties;
+  }
+
+  &--location {
+    background: $bg-gradient, url(../../../assets/images/outside-garden.webp);
+    @include backgroundProperties;
+  }
+
+  &--about {
+    background: $bg-gradient, url(../../../assets/images/kitchen.webp);
+    @include backgroundProperties;
+  }
+
+  &--contact {
+    background: $bg-gradient, url(../../../assets/images/garage-black.webp);
+    @include backgroundProperties;
+  }
+
+  &__header {
+    max-width: 100ch;
+    margin: 0 auto 9rem;
+
+    @media only screen and (max-width: $bp-small) {
+      max-width: 100%;
+      margin-bottom: 6.4rem;
+    }
+  }
+}
+
+#map {
+  height: 55rem;
+
+  @media only screen and (max-width: 37.5em) {
+    height: 40rem;
+  }
+}

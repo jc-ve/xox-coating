@@ -1,0 +1,16 @@
+.metric {
+  text-align: center;
+
+  &__stat {
+    font-weight: 700;
+    font-family: $font-heading;
+    font-size: 6.2rem;
+    color: $clr-gray;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  &__desc {
+    color: $clr-gray-light;
+  }
+}
